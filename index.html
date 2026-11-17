@@ -821,10 +821,12 @@
       background: linear-gradient(135deg, #2E1910 0%, #24130C 100%);
       color: #FBF3EC;
       border-radius: var(--radius-lg);
-      padding: 28px 20px;
+      padding: 32px 28px;
       box-shadow: 0 18px 40px rgba(43, 24, 16, 0.18);
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 920px;
+      margin: 0 auto;
       position: relative;
       overflow: hidden;
     }
@@ -1532,7 +1534,7 @@
   <div class="top-bar">
     <div class="container top-bar__inner">
       <div class="top-bar__info">
-        <span class="top-bar__item">
+        <span class="top-bar__item" style="cursor: pointer;" data-modal="locations" title="Ver detalles de ubicación">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -1540,7 +1542,7 @@
           </svg>
           Cafetería de la UNITEC, Guacara, Edo. Carabobo
         </span>
-        <a href="tel:+525549876543" class="top-bar__item">
+        <a href="tel:+584149411327" class="top-bar__item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
             <path
@@ -1549,13 +1551,13 @@
           </svg>
           +58 414-9411327
         </a>
-        <a href="mailto:hola@thecoffeelounge.com" class="top-bar__item">
+        <a href="mailto:bastidasunitec@gmail.com" class="top-bar__item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
-          .bastidasunitec@gmail.com
+          bastidasunitec@gmail.com
         </a>
       </div>
 
@@ -1773,7 +1775,7 @@
         </div>
 
         <div class="drinks-grid">
-          <article class="drink-card searchable-item" data-name="Capuchino clásico" data-price="4.50">
+          <article class="drink-card searchable-item" data-name="Capuchino" data-price="3.00">
             <div class="drink-card__img-wrap">
               <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=700&q=80"
                 alt="Capuchino clásico con arte latte" loading="lazy" />
@@ -1781,7 +1783,7 @@
             </div>
             <div class="drink-card__footer">
               <h3 class="drink-card__name">Capuchino</h3>
-              <button type="button" class="circle-btn add-item-btn" aria-label="Agregar Capuchino clásico">
+              <button type="button" class="circle-btn add-item-btn" aria-label="Agregar Capuchino">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
                   stroke-linejoin="round">
                   <path d="M5 12h14"></path>
@@ -1791,7 +1793,7 @@
             </div>
           </article>
 
-          <article class="drink-card searchable-item" data-name="Macchiato de caramelo" data-price="5.20">
+          <article class="drink-card searchable-item" data-name="Macchiato" data-price="4.00">
             <div class="drink-card__img-wrap">
               <img src="https://images.unsplash.com/photo-1579888071069-c107a6f79d82?auto=format&fit=crop&w=700&q=80"
                 alt="Macchiato de caramelo con crema y sirope" loading="lazy" />
@@ -1799,7 +1801,7 @@
             </div>
             <div class="drink-card__footer">
               <h3 class="drink-card__name">Macchiato</h3>
-              <button type="button" class="circle-btn add-item-btn" aria-label="Agregar Macchiato de caramelo">
+              <button type="button" class="circle-btn add-item-btn" aria-label="Agregar Macchiato">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
                   stroke-linejoin="round">
                   <path d="M5 12h14"></path>
@@ -1809,7 +1811,7 @@
             </div>
           </article>
 
-          <article class="drink-card searchable-item" data-name="Latte de matcha" data-price="5.00">
+          <article class="drink-card searchable-item" data-name="Latte de matcha" data-price="4.50">
             <div class="drink-card__img-wrap">
               <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=700&q=80"
                 alt="Latte de matcha ceremonial con arte latte" loading="lazy" />
@@ -1845,7 +1847,7 @@
             </div>
           </article>
 
-          <article class="drink-card searchable-item" data-name="Café frío" data-price="4.80">
+          <article class="drink-card searchable-item" data-name="Café frío" data-price="3.50">
             <div class="drink-card__img-wrap">
               <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
                 alt="Café frío cold brew servido con hielo y crema" loading="lazy" />
@@ -1944,17 +1946,17 @@
           </div>
 
           <div class="bestsellers-grid">
-            <article class="food-card searchable-item" data-name="Croissant de mantequilla" data-price="3.90">
+            <article class="food-card searchable-item" data-name="Pastelitos" data-price="1.00">
               <div class="food-card__img">
                 <img src="https://i.pinimg.com/1200x/85/94/77/85947747901c690376c9f3e6e3277fc1.jpg"
-                  alt="Croissant de mantequilla recién horneado" loading="lazy" />
+                  alt="Pastelitos recién horneados" loading="lazy" />
               </div>
               <div class="food-card__footer">
                 <div class="food-card__info">
                   <h3 class="food-card__name">Pastelitos</h3>
-                  <span class="food-card__price">$1</span>
+                  <span class="food-card__price">$1.00</span>
                 </div>
-                <button type="button" class="circle-btn add-item-btn" aria-label="Añadir Croissant de mantequilla">
+                <button type="button" class="circle-btn add-item-btn" aria-label="Añadir Pastelitos">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
                     <path d="M12 5v14M5 12h14"></path>
                   </svg>
@@ -1962,7 +1964,7 @@
               </div>
             </article>
 
-            <article class="food-card searchable-item" data-name="Pastel de chocolate" data-price="5.80">
+            <article class="food-card searchable-item" data-name="Pastel de chocolate" data-price="3.50">
               <div class="food-card__img">
                 <img src="https://i.pinimg.com/736x/75/84/1a/75841a7276c14f937cbce8a167e17d92.jpg"
                   alt="Pastel de chocolate artesanal con ganache" loading="lazy" />
@@ -1980,17 +1982,17 @@
               </div>
             </article>
 
-            <article class="food-card searchable-item" data-name="Sándwich vegetal" data-price="7.50">
+            <article class="food-card searchable-item" data-name="Sándwich" data-price="2.50">
               <div class="food-card__img">
                 <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=700&q=80"
-                  alt="Sándwich vegetal tostado a la plancha" loading="lazy" />
+                  alt="Sándwich tostado a la plancha" loading="lazy" />
               </div>
               <div class="food-card__footer">
                 <div class="food-card__info">
                   <h3 class="food-card__name">Sándwich</h3>
                   <span class="food-card__price">$2.50</span>
                 </div>
-                <button type="button" class="circle-btn add-item-btn" aria-label="Añadir Sándwich vegetal">
+                <button type="button" class="circle-btn add-item-btn" aria-label="Añadir Sándwich">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
                     <path d="M12 5v14M5 12h14"></path>
                   </svg>
@@ -2103,7 +2105,7 @@
       </div>
 
       <div class="footer-meta">
-        <span>© 2026 The Coffee Lounge. Todos los derechos reservados.</span>
+        <span>© 2026 El Rincón Angelical. Todos los derechos reservados.</span>
         <div class="footer-meta__links">
           <a href="#inicio">Inicio</a>
           <a href="#bebidas">Menú</a>
@@ -2354,7 +2356,7 @@
         rowsHtml += `<div class="cart-total"><span>Total estimado</span><span>$${total.toFixed(2)}</span></div>`;
         rowsHtml += `<button type="button" class="btn-primary" id="confirmOrderBtn" style="margin-top:8px;">Confirmar pedido para recoger →</button>`;
 
-        openModal("Tu pedido en The Coffee Lounge", rowsHtml);
+        openModal("Tu pedido en El Rincón Angelical", rowsHtml);
 
         modalBody.querySelectorAll("[data-qty]").forEach((btn) => {
           btn.addEventListener("click", () => {
@@ -2387,35 +2389,33 @@
 
       const modalTemplates = {
         locations: {
-          title: "Nuestras ubicaciones",
+          title: "Nuestra ubicación y horario",
           html: `
-            <p><strong>Roma Norte (Casa Matriz):</strong> Calle del Café 123 — Lun a Dom, 7:30 a 21:30.</p>
-            <p><strong>Condesa Parque:</strong> Av. Ámsterdam 84 — Lun a Dom, 8:00 a 21:00.</p>
-            <p><strong>Polanco Lounge:</strong> Julio Verne 52 — Lun a Sáb, 7:30 a 22:00.</p>
-            <p style="font-size:0.84rem;color:var(--accent);">Wi-Fi de fibra óptica, enchufes en cada mesa y terraza pet-friendly.</p>
+            <p><strong>Cafetería de la UNITEC:</strong> Guacara, Edo. Carabobo.</p>
+            <p><strong>Horario de atención:</strong> Sábados de 8:30 AM a 4:30 PM.</p>
+            <p><strong>Contacto directo:</strong> Tel: <a href="tel:+584149411327" style="color:var(--accent);font-weight:600;">+58 414-9411327</a> &bull; Correo: <a href="mailto:bastidasunitec@gmail.com" style="color:var(--accent);font-weight:600;">bastidasunitec@gmail.com</a></p>
+            <p style="font-size:0.84rem;color:var(--accent);margin-top:6px;">Wi-Fi de alta velocidad, espacios cómodos y ambiente ideal para estudiar y compartir.</p>
           `
         },
         events: {
-          title: "Eventos y catas",
+          title: "Eventos y actividades",
           html: `
-            <p><strong>Jueves de cata de origen único:</strong> 19:00 h — Recorrido guiado por granos de Chiapas, Etiopía y Colombia.</p>
-            <p><strong>Sábados de arte latte:</strong> 11:00 h — Taller práctico para principiantes con nuestros baristas principales.</p>
-            <p><strong>Noches acústicas:</strong> Viernes de 19:30 a 21:30 h en terraza Roma Norte.</p>
+            <p><strong>Sábados de café y estudio:</strong> Espacio cómodo con Wi-Fi veloz para tus proyectos y repasos académicos.</p>
+            <p><strong>Novedades de la semana:</strong> Repostería fresca del día y combos especiales cada sábado.</p>
           `
         },
         story: {
           title: "Nuestra historia",
           html: `
-            <p>The Coffee Lounge nació en 2019 con una idea sencilla: reunir lo mejor del café de especialidad tostado en pequeños lotes con la calidez de una sala de estar contemporánea.</p>
-            <p>Trabajamos directamente con fincas responsables y horneamos nuestra pastelería cada madrugada con mantequilla francesa, cacao real y harinas seleccionadas.</p>
+            <p>El Rincón Angelical nació con el propósito de ofrecer a la comunidad de la UNITEC y visitantes un espacio acogedor con café delicioso y repostería fresca del día.</p>
+            <p>Un punto de encuentro pensado para recargar energías, estudiar con tranquilidad y compartir con amigos.</p>
           `
         },
         fullmenu: {
-          title: "Carta completa de especialidad",
+          title: "Carta del menú",
           html: `
-            <p><strong>Espresso &amp; Leche:</strong> Espresso doble ($3.20), Capuchino clásico ($4.50), Flat White ($4.60), Macchiato de caramelo ($5.20), Delicia de moka ($5.40).</p>
-            <p><strong>Té &amp; Fríos:</strong> Latte de matcha ($5.00), Café frío Cold Brew ($4.80), Chai artesanal ($4.90).</p>
-            <p><strong>Panadería &amp; Cocina:</strong> Croissant de mantequilla ($3.90), Pastel de chocolate ($5.80), Sándwich vegetal ($7.50).</p>
+            <p><strong>Bebidas:</strong> Capuchino ($3.00), Macchiato ($4.00), Latte de matcha ($4.50), Delicia de moka ($5.40), Café frío ($3.50).</p>
+            <p><strong>Comida y bocados:</strong> Pastelitos ($1.00), Pastel de chocolate ($3.50), Sándwich ($2.50).</p>
           `
         }
       };
